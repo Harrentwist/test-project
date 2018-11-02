@@ -20,6 +20,7 @@ public class SpawnController : MonoBehaviour
         prefabSpawn();
         activationOrder = createOrderList();
         activationManager.addDelegate(activationOrderCheck);
+        Cursor.visible = false;
         foreach(var v in activationOrder)
         {
             Debug.Log(v);
@@ -27,7 +28,7 @@ public class SpawnController : MonoBehaviour
     }
 
 
-    void prefabSpawn() //спавн трех обелисков + игрок
+    void prefabSpawn() //спавн трех обелисков + игрока
     {
         if (obeliskPrefab.Length + 1 <= spawnPoints.Length)
         {
