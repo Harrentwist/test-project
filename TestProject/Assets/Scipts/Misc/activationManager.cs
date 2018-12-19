@@ -2,21 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class activationManager : MonoBehaviour
+public class ActivationManager : MonoBehaviour
+//для отделения реализацию интерактивных объектов от логики порядка проверки
 {
+    static private Func<InteractableObjectType, bool> mainDelegate;
 
-    static private Func<obeliskTypes, bool> controllerDelegate;
-
-    static public void addDelegate(Func<obeliskTypes, bool> del)
+    static public void AddDelegate(Func<InteractableObjectType, bool> del)
     {
-        controllerDelegate = del;
+        mainDelegate = del;
     }
+    
 
-    static public bool activate(obeliskTypes obel)
+    static public bool Activate(InteractableObjectType type)
     {
-        bool isCorrect = controllerDelegate.Invoke(obel);
-        return isCorrect;
+        bool isTypeCorrect = mainDelegate.Invoke(type);
+        return isTypeCorrect;
     }
 
 }

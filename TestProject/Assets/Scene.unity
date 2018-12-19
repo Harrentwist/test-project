@@ -390,6 +390,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c15d8c463dee84d8077bd215c3bc66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnWrongOrder:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnWeaponHit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   spawnPoints:
   - {fileID: 1867538361}
   - {fileID: 597485340}
@@ -400,7 +410,7 @@ MonoBehaviour:
   - {fileID: 2018857106}
   - {fileID: 214785964}
   - {fileID: 1531633177}
-  obeliskPrefab:
+  InteractablesPrefabs:
   - {fileID: 1530715304745930, guid: 07d577bc150eb5747ad34cadf718ee61, type: 2}
   - {fileID: 1359977656739670, guid: fb4b992ab3504eb41b2daa2139b5f0fd, type: 2}
   - {fileID: 1845292055330764, guid: c71149ecb649af449b68007ef5869dfb, type: 2}
@@ -850,7 +860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb1a8bff3a6bdd441b3fad1ba8f3343b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnController: {fileID: 473478441}
   sprites:
   - {fileID: 21300000, guid: 3e6cd44e6490191428819b36b038e092, type: 3}
   - {fileID: 21300000, guid: 56c5bd00816af794e84c6ea9866a97ed, type: 3}

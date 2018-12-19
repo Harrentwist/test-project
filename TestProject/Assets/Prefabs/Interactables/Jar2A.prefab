@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 33660734171982302}
   - component: {fileID: 23498604344390752}
   - component: {fileID: 65540308163005456}
-  - component: {fileID: 114727785927288672}
+  - component: {fileID: 114598450210850906}
   m_Layer: 9
   m_Name: Jar2A
-  m_TagString: Vase
+  m_TagString: Jar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.91970825, y: 2.0415702, z: 0.9197078}
   m_Center: {x: 0, y: 0.82, z: 0}
---- !u!114 &114727785927288672
+--- !u!114 &114598450210850906
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,6 +105,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1359977656739670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494b8c177fdd1f14c92699494f95f3e5, type: 3}
+  m_Script: {fileID: 11500000, guid: d8f8076243368c64c97cf26b6ed9d54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleSuccess: {fileID: 1689833308672374, guid: 91a4af0a486a0734ba2d07393a8d3233,
+    type: 2}
+  particleFail: {fileID: 1171821569480442, guid: 24f1778922bb4dd4e9ff05b70af84348,
+    type: 2}

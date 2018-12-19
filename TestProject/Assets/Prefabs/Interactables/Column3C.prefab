@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33020332079561916}
   - component: {fileID: 23696458649558266}
   - component: {fileID: 65967192550684214}
-  - component: {fileID: 114749622002908010}
+  - component: {fileID: 114982312872904512}
   m_Layer: 0
   m_Name: Column3C
   m_TagString: Untagged
@@ -128,17 +128,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 3.8187363, z: 1.5}
   m_Center: {x: 0, y: 1.7500786, z: 0}
---- !u!114 &114749622002908010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1530715304745930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494b8c177fdd1f14c92699494f95f3e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114897321655654416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +139,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b160633b4effe34fb973ad7fe12c714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objType: 0
+  particleSuccess: {fileID: 1689833308672374, guid: 91a4af0a486a0734ba2d07393a8d3233,
+    type: 2}
+  particleFail: {fileID: 1171821569480442, guid: 24f1778922bb4dd4e9ff05b70af84348,
+    type: 2}
+--- !u!114 &114982312872904512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530715304745930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b160633b4effe34fb973ad7fe12c714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   particleSuccess: {fileID: 1689833308672374, guid: 91a4af0a486a0734ba2d07393a8d3233,
     type: 2}
   particleFail: {fileID: 1171821569480442, guid: 24f1778922bb4dd4e9ff05b70af84348,
